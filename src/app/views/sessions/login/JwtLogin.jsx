@@ -12,6 +12,7 @@ import { useNavigate } from 'react-router-dom'
 import { Box, styled, useTheme } from '@mui/system'
 import { TextValidator, ValidatorForm } from 'react-material-ui-form-validator'
 import { Paragraph, Span } from 'app/components/Typography'
+
 import SideNav from 'app/components/Sidenav/Sidenav'
 
 const FlexBox = styled(Box)(() => ({
@@ -170,7 +171,7 @@ const JwtLogin = () => {
                                             />
                                         )}
                                     </Box>
-                                    {/* <Span sx={{ mr: 1, ml: '20px' }}>or</Span>
+                                    <Span sx={{ mr: 1, ml: '20px' }}>or</Span>
                                     <Button
                                         sx={{ textTransform: 'capitalize' }}
                                         onClick={() =>
@@ -178,16 +179,16 @@ const JwtLogin = () => {
                                         }
                                     >
                                         Sign up
-                                    </Button> */}
+                                    </Button>
                                 </FlexBox>
-                                {/* <Button
+                                <Button
                                     sx={{ color: textPrimary }}
                                     onClick={() =>
                                         navigate('/session/forgot-password')
                                     }
                                 >
                                     Forgot password?
-                                </Button> */}
+                                </Button>
                             </ValidatorForm>
                         </ContentBox>
                     </Grid>

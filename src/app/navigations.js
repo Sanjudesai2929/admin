@@ -187,7 +187,7 @@ const role = localStorage.getItem('role')
 // const role = cookies.get('role')
 // const role = ['SUBADMIN']
 
-if (include(role, 'SUBADMIN')) {
+if (role == 'SUBADMIN') {
     delete navigations[2].children[0]
     delete navigations[2].children[1]
 } else {

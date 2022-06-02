@@ -87,7 +87,7 @@ const adminrole = cookies.get('adminrole')
 
 const role = cookies.get('role')
 
-if (include(role, 'SUBADMIN')) {
+if (role == 'SUBADMIN') {
     var admin = <Analytics />
 } else {
     var admin = <AdminTable />
